@@ -4,7 +4,7 @@ from PIL import Image
 #  Gemini API key
 api_key = st.secrets["GOOGLE_API_KEY"]
 
-client = genai.Client(api_key)
+client = genai.Client(api_key=api_key)
 
 
 icon = Image.open("logo.png")

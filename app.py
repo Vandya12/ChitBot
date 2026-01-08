@@ -1,8 +1,10 @@
 import streamlit as st
 from google import genai
 from PIL import Image 
-#  Gemini API key 
-client = genai.Client(api_key="AIzaSyC8L1t_zZU-fQU3XFsaWGPOX1ZhJokwpz8")
+#  Gemini API key
+api_key = st.secrets["GOOGLE_API_KEY"]
+
+client = genai.Client(api_key)
 
 
 icon = Image.open("logo.png")

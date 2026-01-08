@@ -20,7 +20,7 @@ if prompt:
     st.chat_message("user").write(prompt)
 
     response = client.models.generate_content(
-        model="models/gemini-flash-latest", 
+        model="models/gemini-pro-latest", 
         contents=prompt
     )
 
